@@ -479,6 +479,32 @@ form button {
 }
 
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 12px 15px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .nav-links {
+    flex-direction: row !important;
+    gap: 15px !important;
+    width: auto !important;
+    justify-content: flex-end;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 6px 12px;
+    white-space: nowrap;
+  }
+}
+
 
 
 
