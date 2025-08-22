@@ -505,6 +505,26 @@ form button {
   }
 }
 
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 10px;              /* نقلل المسافة بين العناصر */
+    font-size: 14px;        /* نصغر الخط */
+    flex-wrap: wrap;        /* يخليهم ينزلوا سطر تاني لو مفيش مكان */
+    justify-content: center;
+  }
+
+  .nav-links a {
+    padding: 6px 8px;       /* نقلل البادينج */
+  }
+
+  .logo img {
+    width: 90px;            /* نصغر اللوجو شوية */
+  }
+
+  .timer-wrapper {
+    display: none;          /* نخفي العداد في الموبايل (اختياري) */
+  }
+}
 
 
 
