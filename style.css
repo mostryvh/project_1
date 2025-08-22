@@ -480,49 +480,29 @@ form button {
 
 
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 12px 15px;
-    flex-wrap: nowrap;
-    width: 100%;
+  .nav-links {
+    overflow-x: auto;   /* يخليها قابلة للسكرول */
+    white-space: nowrap; /* يمنع العناصر من النزول لسطر تاني */
+    gap: 15px;
+    font-size: 14px;
+    padding-bottom: 5px;
   }
 
-  .nav-links {
-    flex-direction: row !important;
-    gap: 15px !important;
-    width: auto !important;
-    justify-content: flex-end;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  .nav-links li {
+    display: inline-block; /* يخلي العناصر جنب بعض */
   }
 
   .nav-links a {
+    padding: 6px 10px;
     display: inline-block;
-    padding: 6px 12px;
-    white-space: nowrap;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    gap: 10px;              /* نقلل المسافة بين العناصر */
-    font-size: 14px;        /* نصغر الخط */
-    flex-wrap: wrap;        /* يخليهم ينزلوا سطر تاني لو مفيش مكان */
-    justify-content: center;
-  }
-
-  .nav-links a {
-    padding: 6px 8px;       /* نقلل البادينج */
   }
 
   .logo img {
-    width: 90px;            /* نصغر اللوجو شوية */
+    width: 90px;  /* نصغر اللوجو شوية */
   }
 
   .timer-wrapper {
-    display: none;          /* نخفي العداد في الموبايل (اختياري) */
+    display: none; /* نخفي العداد في الموبايل (اختياري) */
   }
 }
 
