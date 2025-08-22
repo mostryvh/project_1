@@ -479,25 +479,29 @@ form button {
 }
 
 
- @media (max-width: 768px) {
-
-   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row !important; /* اجعل الاتجاه أفقي */
+    justify-content: space-around !important; /* توزيع العناصر مع تساوي المسافات */
+    align-items: center !important;
     padding: 10px 15px;
-  }
-
-   .nav-links {
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap; /* للسماح بالالتفاف على الشاشات الصغيرة جدًا */
     width: 100%;
   }
 
-   .nav-links a {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
+  .nav-links {
+    flex-direction: row !important; /* روابط التنقل أفقيًا */
+    gap: 15px !important;
+    width: auto !important; /* لا تأخذ عرض كامل */
+    justify-content: center;
   }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 8px 12px;
+    width: auto;
+  }
+}
 
    .hero-section {
     padding: 80px 15px;
@@ -583,4 +587,5 @@ form button {
     padding: 15px 10px;
   }
 }
+
 
